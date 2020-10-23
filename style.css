@@ -95,7 +95,7 @@ header {
     background-repeat: none;
     padding: 15px;
 }
-
+/* page spanx */
 .wrapper {
     max-width: 1400px;
     width: 85%;
@@ -127,6 +127,7 @@ h1 {
 }
 
 /* SOCIAL NAV */
+/* so, I had a lot of trouble positioning these and I thought "hey, since they exist outside the wrapper, wouldn't it be cool if they were fixed to the page so they would always be available?" since they never block or interfere with other content, I just went ahead and did it */
 .socials {
     color: #fcfcfc;
     padding: 3px;
@@ -136,11 +137,13 @@ h1 {
     background-color: rgba(21, 45, 32, 0.4);
     border-radius: 50px;
     box-shadow: 0 0 3px 3px rgba(21, 45, 32, 0.4);
+    text-align: center;
 }
 
 .socials a {
     border-radius: 50%;
     padding: 5px;
+    
 }
 
 .socials a:hover, .socials a:focus {
@@ -203,6 +206,7 @@ h1 {
 }
 
 /* ICON LINKS? */
+/* i assume these are links, so I made hover and focus effects */
 .icons {
     background-color: #152D20;
     padding: 50px 0 40px 0;
@@ -226,4 +230,51 @@ h1 {
 
 .icons h4 {
     padding: 10px 0;
+}
+
+/* BLOG */
+.blog {
+    background-color: #fcfcfc;
+}
+
+.zebraContent,{
+    max-width: calc(50% - 30px);
+    float: left;
+    margin-right: 30px;
+    padding: 60px 60px 60px 0;
+}
+
+.zebras h5, .bond h5 {
+    max-width: 50%;
+    margin-bottom: 15px;
+}
+
+.zebras button, .bond button {
+    margin-top: 15px;
+    border: 2px solid transparent;
+    background-color: #152D20;
+    color: #fcfcfc;
+}
+
+.zebras button:hover, .zebras button:focus, .bond button:hover, .bond button:focus {
+    border: 2px solid #152d20;
+    background-color: #fcfcfc;
+    color: #152D20;
+}
+
+.zebras img {
+    max-width: 50%;
+    float: right;
+}
+
+.bond img {
+    max-width: 50%;
+    float: left;
+}
+
+.bondContent{
+    max-width: calc(50% - 30px);
+    float: right;
+    margin-right: 30px;
+    padding: 60px 0 60px 60px;
 }
