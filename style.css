@@ -6,7 +6,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 *, *:before, *:after {box-sizing: inherit}
 
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+.srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 html{font-size: 62.5%;}
 img {max-width: 100%; height: auto; display: block;}
 ul {list-style-type: none;}
@@ -31,6 +31,7 @@ h1, h2, h3, h5 {
 }
 
 h1 {
+    /* smaller than styleguide to match psd more closely */
     color: #fcfcfc;
     font-size: 9rem;
     line-height: 117px;
@@ -87,7 +88,7 @@ section {
 }
 /* HEADER */
 header {
-    background-image: url(./animal-land-assets/animal-land-assets/image-1.jpg);
+    background-image: url(./animalLandAssets/animalLandAssets/image01.jpg);
     height: 90vh;
     background-size: cover;
     background-position: center;
@@ -114,7 +115,7 @@ header {
 }
 
 .pageNav a:hover, .pageNav a:focus {
-    border-bottom: 2px solid #fcfcfc;
+    color: #C3D3CB;
 }
 
 /* TITLE */
@@ -128,8 +129,22 @@ h1 {
 /* SOCIAL NAV */
 .socials {
     color: #fcfcfc;
-    float: right;
-    /* margin-top: 10%; */
+    padding: 3px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: rgba(21, 45, 32, 0.4);
+    border-radius: 50px;
+    box-shadow: 0 0 3px 3px rgba(21, 45, 32, 0.4);
+}
+
+.socials a {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.socials a:hover, .socials a:focus {
+    color: #C3D3CB;
 }
 
 /* SUZIE'S STORY */
@@ -157,6 +172,13 @@ h1 {
     background-color: #fcfcfc;
     color: #152D20;
     margin-top: 10px;
+    border: 2px solid transparent;
+}
+
+.aboutContent button:hover, .aboutContent button:focus {
+    border: 2px solid #fcfcfc;
+    color: #fcfcfc;
+    background-color: #152d20;
 }
 
 /* OUR FRIENDS */
@@ -196,4 +218,12 @@ h1 {
 .icons a {
     color: #fcfcfc;
     font-size: 4rem;
+}
+
+.icons a:hover, .icons a:focus {
+    color: #C3D3CB;
+}
+
+.icons h4 {
+    padding: 10px 0;
 }
