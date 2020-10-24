@@ -65,6 +65,10 @@ h5 {
     font-size: 3.5rem;   
 }
 
+h6{
+    color: #fcfcfc;
+}
+
 p {
     line-height: 29px;
 }
@@ -114,6 +118,7 @@ header {
     border-bottom: 2px solid transparent;
 }
 
+/* I tried to make a universal hover and focus color change for all anchor tags on the page, but it only worked for half of them for some reason, so I did them each individually */
 .pageNav a:hover, .pageNav a:focus {
     color: #C3D3CB;
 }
@@ -237,7 +242,7 @@ h1 {
     background-color: #fcfcfc;
 }
 
-.zebraContent,{
+.zebraContent {
     max-width: calc(50% - 30px);
     float: left;
     margin-right: 30px;
@@ -245,7 +250,7 @@ h1 {
 }
 
 .zebras h5, .bond h5 {
-    max-width: 50%;
+    /* max-width: 85%; */
     margin-bottom: 15px;
 }
 
@@ -277,4 +282,91 @@ h1 {
     float: right;
     margin-right: 30px;
     padding: 60px 0 60px 60px;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #152D20;
+}
+
+.bottomNav {
+    float: left;
+}
+
+.bottomNav li {
+    margin-bottom: 13px;
+}
+
+.bottomNav a{
+    color: #fcfcfc;
+}
+
+.bottomNav a:hover, .bottomNav a:focus {
+    color: #C3D3CB;
+}
+
+.subscribe {
+    color: #fcfcfc;
+    float: right;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.subscribe p {
+    margin: 20px 0;
+}
+
+.subscribe input {
+    border: none;
+    background-color: #fcfcfc;
+    color: #000000;
+    height: 39px;
+    min-width: 33vw;
+    margin: 0;
+    display: block;
+    float: left;
+    padding: 0 10px;
+}
+
+.subscribe button {
+    margin: 0;
+    display: block;
+    float: left;
+    background-color: #000000;
+    color: #fcfcfc;
+    
+}
+
+.subscribe button:hover, .subscribe button:focus {
+    color: #000000;
+    background-color: #fcfcfc;
+}
+
+.contactInfo {
+    text-align: right;
+    float: right;
+    color: #fcfcfc;
+}
+
+.contactInfo h6 {
+    margin-bottom: 15px;
+}
+
+.contactInfo p {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fcfcfc;
+    text-align: center;
+}
+
+footer a:hover, footer a:focus {
+    color: #C3D3CB;
+}
+
+footer a {
+    font-family: inherit;
+    font-weight: 300;
 }
