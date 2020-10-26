@@ -15,18 +15,28 @@
 <body>
     <div>
         <!-- HEADER -->
+        <!-- background-->
         <header class="clearfix">
+            <!-- spanx and float parent -->
             <div class="wrapper clearfix">
+                <!-- top navigation menu -->
                 <nav class="pageNav">
-                    <ul>
+                    <input type="checkbox" id="hamburger">
+                    <!-- label for accessibility -->
+                    <label for="hamburger" class="srOnly">Menu</label>
+                    <!-- this is not the same hamburger menu icon, but it's the only one I can use with the free version of font awesome -->
+                    <i class="fas fa-bars"></i>
+                    <ul class="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- title -->
                 <h1>Animal Refuge</h1>
             </div>
+            <!-- social media links menu -->
             <nav class="socials">
                 <ul>
                     <li>
@@ -45,38 +55,48 @@
             </nav>
         </header>
         <!-- SUZIE'S STORY -->
+        <!-- is this the about section? that's what I'm assuming -->
+        <!-- background -->
         <section id="about" class="about">
+            <!-- page spanx and float parent -->
             <div class="wrapper clearfix">
                 <figure><img src="./animalLandAssets/animalLandAssets/image06.jpg"
                         alt="Brown tabby cat laying on red sofa"></figure>
                 <div class="aboutContent">
                     <h2>Suzie's Story</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsa unde beatae, hic, laborum
-                        molestias assumenda odio sapiente obcaecati dolorem cupiditate vero esse minima temporibus
-                        voluptatem eaque tempore ea doloribus mollitia illo, rem illum dolor! Quo soluta voluptatem quis
-                        repellendus, enim reiciendis beatae, deserunt fuga rerum vero commodi repudiandae ullam.</p>
+                    molestias assumenda odio sapiente obcaecati dolorem cupiditate vero esse minima temporibus
+                    voluptatem eaque tempore ea doloribus mollitia illo, rem illum dolor! Quo soluta voluptatem quis
+                    repellendus, enim reiciendis beatae, deserunt fuga rerum vero commodi repudiandae ullam.</p>
+                    <!-- not sure if this is functional or for navigation, so I made it a button for now -->
                     <button>Read More</button>
                 </div>
             </div>
         </section>
         <!-- FRIENDS - IS THIS THE GALLERY? -->
+        <!-- background -->
         <section id="gallery" class="friends">
+            <!-- page spanx-->
             <div class="wrapper">
                 <h3>Some of Our</h3>
                 <h3>Friends</h3>
+                <!-- float parent -->
                 <ul class="clearfix">
                     <li><img src="./animalLandAssets/animalLandAssets/image05.jpg"
-                            alt="Green crested basilisk lizard on tree trunk"></li>
+                    alt="Green crested basilisk lizard on tree trunk"></li>
                     <li><img src="./animalLandAssets/animalLandAssets/image04.jpg"
-                            alt="Herd of sheep with one looking into camera"></li>
+                    alt="Herd of sheep with one looking into camera"></li>
                     <li><img src="./animalLandAssets/animalLandAssets/image03.jpg"
-                            alt="Blue and yellow macaw on branch, eating food held in foot"></li>
+                    alt="Blue and yellow macaw on branch, eating food held in foot"></li>
                 </ul>
             </div>
         </section>
         <!-- WEIRD LINK BREAK -->
+        <!-- I'm assuming these will link to other pages? so I made them anchor tags -->
         <section class="icons">
+            <!-- spanx -->
             <div class="wrapper">
+                <!-- float parent -->
                 <ul class="clearfix">
                     <li>
                         <!-- not the same paw icon as on the PSD, but the closest one I have access to with a free font awesome account -->
@@ -96,16 +116,20 @@
         </section>
         <!-- IS THIS THE BLOG? I HOPE SO -->
         <section id="blog" class="blog">
+            <!-- spanx -->
             <div class="wrapper">
+                <!-- float parent -->
                 <div class="zebras clearfix">
                     <div class="zebraContent">
                         <h5>fascinating Facts About Zebras</h5>
                         <p class="zebraText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
                         maxime unde error facilis impedit?</p>
+                        <!-- not sure if this is functional or for navigation, so I made it a button for now -->
                         <button>Read More</button>
                     </div>
                     <img src="./animalLandAssets/animalLandAssets/image07.jpg" alt="Two zebras nuzzling in the grass">
                 </div>
+                <!-- float parent -->
                 <div class="bond clearfix">
                     <img src="./animalLandAssets/animalLandAssets/image02.jpg" alt="">
                     <div class="bondContent">
@@ -113,14 +137,18 @@
                         <p class="bondText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto consectetur
                         similique deserunt aliquam, distinctio, tempore, placeat reprehenderit quas ipsam pariatur
                         porro.</p>
+                        <!-- not sure if this is functional or for navigation, so I made it a button for now -->
                         <button>Read More</button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- 99% SURE THIS IS THE CONTACT SECTION -->
+        <!-- CONTACT SECTION -->
         <section id="contact" class="contact" id="contact">
+            <!-- spanx and float parent -->
             <div class="wrapper clearfix">
+                <!-- bottom navigation links -->
+                <!-- these are different than the top and mobile nav links, I made them tru to the given design, but can easily change to match the other nav menus -->
                 <nav class="bottomNav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -129,12 +157,14 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- contact info -->
                 <div class="contactInfo">
                     <h6>Contact</h6>
                     <p>info@email.com | 123-456-7890</p>
                     <p>123 Some Road Toronto, ON</p>
                     <p>A5A 5A5, Canada</p>
                 </div>
+                <!-- subscribe form -->
                 <div class="subscribe">
                     <h6>Stay Updated</h6>
                     <p>Subscribe to our newsletter to stay updated.</p>

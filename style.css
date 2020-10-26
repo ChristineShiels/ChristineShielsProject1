@@ -1,3 +1,4 @@
+/* setup */
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;text-decoration:none;color:inherit;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
@@ -31,7 +32,7 @@ h1, h2, h3, h5 {
 }
 
 h1 {
-    /* smaller than styleguide to match psd more closely */
+    /* smaller than on styleguide to match psd more closely */
     color: #fcfcfc;
     font-size: 9rem;
     line-height: 117px;
@@ -115,7 +116,6 @@ header {
     color: #fcfcfc;
     padding: 5px;
     margin-right: 15px;
-    border-bottom: 2px solid transparent;
 }
 
 /* I tried to make a universal hover and focus color change for all anchor tags on the page, but it only worked for half of them for some reason, so I did them each individually */
@@ -123,16 +123,21 @@ header {
     color: #C3D3CB;
 }
 
+/* Hiding the Hamburger: this Christmas's hot new game for kids of all ages! */
+.pageNav i, .pageNav input {
+    display: none;
+}
+
 /* TITLE */
 h1 {
     float: right;
-    max-width: 40%;
+    max-width: 50%;
     text-align: right;
     margin: 50px 0;
 }
 
 /* SOCIAL NAV */
-/* so, I had a lot of trouble positioning these and I thought "hey, since they exist outside the wrapper, wouldn't it be cool if they were fixed to the page so they would always be available?" since they never block or interfere with other content, I just went ahead and did it */
+/* so, I had a lot of trouble positioning these and I thought "hey, since they exist outside the wrapper, wouldn't it be cool if they were fixed to the page so they would always be available?" since they never block or interfere with other content, I went ahead and did it */
 .socials {
     color: #fcfcfc;
     padding: 3px;
@@ -156,6 +161,7 @@ h1 {
 }
 
 /* SUZIE'S STORY */
+/* About? */
 .about {
     background-color: #152D20;
 }
@@ -190,6 +196,7 @@ h1 {
 }
 
 /* OUR FRIENDS */
+/* Gallery? */
 .friends {
     background-color: #C3D3CB;
 }
@@ -211,7 +218,7 @@ h1 {
 }
 
 /* ICON LINKS? */
-/* i assume these are links, so I made hover and focus effects */
+/* Since I assumed these are links, I made hover and focus effects in the same theme as the rest of the anchor tags */
 .icons {
     background-color: #152D20;
     padding: 50px 0 40px 0;
@@ -289,6 +296,7 @@ h1 {
     background-color: #152D20;
 }
 
+/* nav menu */
 .bottomNav {
     float: left;
 }
@@ -305,6 +313,7 @@ h1 {
     color: #C3D3CB;
 }
 
+/* subscribe form */
 .subscribe {
     color: #fcfcfc;
     float: right;
@@ -342,6 +351,7 @@ h1 {
     background-color: #fcfcfc;
 }
 
+/* contact info */
 .contactInfo {
     text-align: right;
     float: right;
@@ -356,6 +366,7 @@ h1 {
     margin-bottom: 5px;
 }
 
+/* FOOTER */
 footer {
     background-color: #000000;
     color: #fcfcfc;
@@ -369,4 +380,76 @@ footer a:hover, footer a:focus {
 footer a {
     font-family: inherit;
     font-weight: 300;
+}
+
+/* I chose to break to the mobile design @ 1005px because that's the point when the design starte to look real bad, specifically the contact section. The header section also got cramped and ugly less than 100px smaller */
+
+/* MOBILE DESIGN */
+@media (max-width:1005px) {
+    .wrapper {
+        max-width: 1005px;
+        width: 95%;
+    }
+    
+    h1 {
+        float: left;
+        text-align: left;
+        font-size: 5rem;
+        max-width: 30%;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    /* Hamburger Menu */
+    /* positioning nav menu at right */
+    .pageNav i, .pageNav input {
+        display: block;
+        font-size: 5rem;
+    }
+    
+    .pageNav input {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 15px;
+        right: 38px;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .pageNav i {
+        color: #fcfcfc;
+        position: absolute;
+        top: 15px;
+        right: 42px;
+        
+    }
+
+    .pageNav li {
+        display: block;
+        text-align: right; 
+    }
+
+    .pageNav a {
+        text-align: right;
+        padding: 5px;
+        margin: 0;
+    }
+
+    /* hide the menu */
+    .menu {
+        float: right;
+        margin-top: 50px;
+        position: fixed;
+        right: -200px;
+        transition: right 500ms;        
+    }
+
+    /* slide the menu in */
+   [type="checkbox"]:checked ~ .menu {
+            right: 5%;
+            position: absolute;
+
+    }
+
 }
